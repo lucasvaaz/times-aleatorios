@@ -1,7 +1,7 @@
 # ⚽ Times Aleatórios 
 sorteio aleatório de jogadores pré definidos para criação de times no FIFA.
 
-Sim, é um projeto simples que tenho um grande carinho, foi meu primeiro projeto após as minhas primeiras aulas de HTML, CSS e Javascritp.
+Sim, é um projeto simples que tenho um grande carinho, foi meu primeiro projeto após as minhas primeiras aulas de HTML, CSS e Javascript.
 Ele foi criado porque eu e mais dois amigos gostamos de jogar FIFA com times editados porém de um modo aleatório, e antes sorteavamos em papéis. Os jogadores foram pré definidos com os que costumamos jogar.
 
 ## Primeiro escolhemos o número de jogadores, limitado a 3.
