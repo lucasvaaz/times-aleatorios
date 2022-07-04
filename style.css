@@ -1,0 +1,192 @@
+@font-face {
+  font-family: fontenav1;
+  src: url(./fonts/Exo-SemiBold.ttf);
+}
+@font-face {
+  font-family: fontenav2;
+  src: url(./fonts/Exo-Bold.ttf);
+}
+
+#header {
+  width: 100%;
+  height: 10rem;
+  background-color: #714c9f;
+  background-image: url(./img/Times.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#quantosPlayers {
+  margin-top: 2rem;
+  text-align: center;
+  height: 40px;
+}
+
+#botoes {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.botao {
+  border: none;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 5px;
+  background-color: #e8d7fc;
+  font-family: fontenav1;
+}
+
+.botao:hover,
+.botao:active,
+.botao:focus {
+  background-color: #714c9f;
+  color: white;
+}
+
+#colunaPlayer1 {
+  width: 350px;
+  
+}
+
+.col {
+  background-color: #714c9f;
+  text-align: center;
+  border: 1px solid #714c9f;
+}
+
+.col,
+.col-9 {
+  border-radius: 5px 0px 0px 5px;
+  padding: 7px;
+  margin: 3px;
+  margin-right: -3px;
+}
+
+.col-9 {
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #714c9f;
+  font-family: fontenav2;
+}
+
+.reserva {
+  background-color: #e8d7fc;
+}
+
+#colunaPlayer1 {
+  margin-top: 20px;
+  
+}
+
+.tituloJogador {
+  font-family: fontenav2;
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #714c9f;
+  margin-top: 20px;
+}
+
+.sortear {
+  margin-top: 15px;
+  font-family: fontenav2;
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #714c9f;
+}
+
+.botoesSorteio {
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+
+.botaoDoSorteio {
+  font-family: fontenav2;
+  border: none;
+  padding: 7px;
+  background-color: #e8d7fc;
+  border-radius: 5px;
+  box-shadow: 2px 3px black;
+  margin: 2px;
+  transition: 400ms;
+  
+}
+
+.botaoDoSorteio:hover {
+  background-color: #714c9f;
+  color: white;
+  box-shadow: none;
+  
+  
+}
+
+#nomes {
+  text-align: center;
+}
+
+.nome{
+  margin: 5px;
+  width: 300px;
+  height: 35px;
+  font-family: fontenav1;
+  border: 1.5px solid grey;
+  border-radius: 5px;
+}
+
+#jogadoresNome{
+  font-family: fontenav2;
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #714c9f;
+  margin-top: 20px;
+}
+
+#btnsortear {
+  font-family: fontenav2;
+  border: none;
+  padding: 7px;
+  background-color: #e8d7fc;
+  border-radius: 5px;
+  box-shadow: 2px 3px black;
+  margin: 2px;
+  transition: 400ms;
+  margin-bottom: 40px;
+  
+}
+
+#btnsortear:hover {
+  background-color: #714c9f;
+  color: white;
+  box-shadow: none;
+  
+  
+}
+
+#btnsortear0 {
+  font-family: fontenav2;
+  border: none;
+  padding: 7px;
+  background-color: #e8d7fc;
+  border-radius: 5px;
+  box-shadow: 2px 3px black;
+  margin: 2px;
+  transition: 400ms;
+  margin-bottom: 40px;
+  
+}
+
+#btnsortear0:hover {
+  background-color: #714c9f;
+  color: white;
+  box-shadow: none;
+  
+  
+}
+
+@media only screen and (max-width: 400px) {
+
+  #colunaPlayer1 {
+    width: 90%;
+    
+  }
+}

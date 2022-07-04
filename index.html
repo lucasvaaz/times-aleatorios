@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/icon.png">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <title>Times Aleatórios</title>
+</head>
+
+<body>
+
+    <header id="header" class="container-fluid"></header>
+
+    <div id="container" class="container-fluid">
+
+        <div id="players" class="container">
+            <div id="quantosPlayers" class="display-6"><img src="./img/players icon.png"> Quantos jogadores?</div>
+            <br><br>
+            <div id="botoes">
+                <button id="botao1" class="botao" data-bs-toggle="collapse" data-bs-target="#collapsePlayer1"
+                    aria-expanded="false" aria-controls="collapseExample">1 jogador <img
+                        src="./img/1player.png"></button>
+
+
+                <button id="botao2" class="botao" data-bs-toggle="collapse" data-bs-target="#collapsePlayer2"
+                    aria-expanded="false" aria-controls="collapseExample">2 jogadores <img
+                        src="./img/2player.png"></button>
+
+
+                <button id="botao3" class="botao" data-bs-toggle="collapse" data-bs-target="#collapsePlayer3"
+                    aria-expanded="false" aria-controls="collapseExample">3 jogadores <img
+                        src="./img/3player.png"></button>
+            </div>
+            <!-- //////////////1 player///////////////// -->
+
+            <div class="collapse" id="collapsePlayer1" data-bs-parent="#container">
+                <div id="colunaPlayer1" class="container">
+                    <p class="tituloJogador">Jogador 1</p>
+                    <div class="row">
+                        <div class="col"><img src="./img/luvas.png"></div>
+                        <div id="goleiro" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="lateralEsquerdo" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="zagueiro1" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="zagueiro2" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="lateralDireito" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/cerebro.png"></div>
+                        <div id="volante" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/cerebro.png"></div>
+                        <div id="meioCampo2" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/cerebro.png"></div>
+                        <div id="meioCampo3" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/chuteiras.png"></div>
+                        <div id="pontaDireita" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/chuteiras.png"></div>
+                        <div id="centroavante" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/chuteiras.png"></div>
+                        <div id="pontaEsquerda" class="col-9"></div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col reserva"><img src="./img/trocar.png"></div>
+                        <div id="meioCampo4" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col reserva"><img src="./img/trocar.png"></div>
+                        <div id="pontaEsquerda2" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col reserva"><img src="./img/trocar.png"></div>
+                        <div id="centroavante2" class="col-9"></div>
+                    </div>
+
+
+                </div>
+
+                <div class="botoesSorteio">
+                    <p class="sortear">Sortear</p>
+                    <button id="sortearGoleiro" class="botaoDoSorteio">Goleiro</button> <button id="sortearZagueiro"
+                        class="botaoDoSorteio">Zaga</button> <button id="sortearMeioCampo"
+                        class="botaoDoSorteio">Meio-Campo</button> <button id="sortearAtaque"
+                        class="botaoDoSorteio">Ataque</button>
+                </div>
+
+            </div>
+
+
+
+            <!-- //////////////2 players - Player 1///////////////// -->
+            <div class="collapse" id="collapsePlayer2" data-bs-parent="#container">
+                <div id="colunaPlayer1" class="container">
+
+                    <p id="jog1" class="tituloJogador">Jogador 1</p>
+                    <div class="row">
+                        <div class="col"><img src="./img/luvas.png"></div>
+                        <div id="goleiro0" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="lateralEsquerdo0" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="zagueiro01" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="zagueiro02" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="lateralDireito0" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/cerebro.png"></div>
+                        <div id="volante0" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/cerebro.png"></div>
+                        <div id="meioCampo02" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/cerebro.png"></div>
+                        <div id="meioCampo03" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/chuteiras.png"></div>
+                        <div id="pontaDireita0" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/chuteiras.png"></div>
+                        <div id="centroavante0" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/chuteiras.png"></div>
+                        <div id="pontaEsquerda0" class="col-9"></div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col reserva"><img src="./img/trocar.png"></div>
+                        <div id="meioCampo04" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col reserva"><img src="./img/trocar.png"></div>
+                        <div id="pontaEsquerda02" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col reserva"><img src="./img/trocar.png"></div>
+                        <div id="centroavante02" class="col-9"></div>
+                    </div>
+
+
+                    <!-- //////////////2 players - Player 2///////////////// -->
+
+                    <p id="jog2" class="tituloJogador">Jogador 2</p>
+                    <div class="row">
+                        <div class="col"><img src="./img/luvas.png"></div>
+                        <div id="goleiro1" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="lateralEsquerdo1" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="zagueiro11" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="zagueiro12" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="lateralDireito1" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/cerebro.png"></div>
+                        <div id="volante1" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/cerebro.png"></div>
+                        <div id="meioCampo12" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/cerebro.png"></div>
+                        <div id="meioCampo13" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/chuteiras.png"></div>
+                        <div id="pontaDireita1" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/chuteiras.png"></div>
+                        <div id="centroavante1" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/chuteiras.png"></div>
+                        <div id="pontaEsquerda1" class="col-9"></div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col reserva"><img src="./img/trocar.png"></div>
+                        <div id="meioCampo14" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col reserva"><img src="./img/trocar.png"></div>
+                        <div id="pontaEsquerda12" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col reserva"><img src="./img/trocar.png"></div>
+                        <div id="centroavante12" class="col-9"></div>
+                    </div>
+
+
+                
+
+
+                <div class="botoesSorteio">
+                    <p class="sortear">Sortear</p>
+                    <button id="sortearGoleiro0" class="botaoDoSorteio">Goleiro</button> <button id="sortearZagueiro0"
+                        class="botaoDoSorteio">Zaga</button> <button id="sortearMeioCampo0"
+                        class="botaoDoSorteio">Meio-Campo</button> <button id="sortearAtaque0"
+                        class="botaoDoSorteio">Ataque</button>
+                </div>
+
+                <div id="nomes">
+                    <p id="jogadoresNome"> Nome dos jogadores</p>
+                <input id="btn10" type="text" class="nome" placeholder="digite aqui..." maxlength="15"> <br>
+                <input id="btn20" type="text" class="nome" placeholder="digite aqui..." maxlength="15"> <br>
+                 
+                <button id="btnsortear0">Sortear jogadores</button>
+           </div>
+        </div>
+    </div>
+</div>
+
+          
+
+
+            <div class="collapse" id="collapsePlayer3" data-bs-parent="#container">
+                <div id="colunaPlayer1" class="container">
+
+                    <p id="jo1" class="tituloJogador">Jogador 1</p>
+                    <div class="row">
+                        <div class="col"><img src="./img/luvas.png"></div>
+                        <div id="goleiro100" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="lateralEsquerdo100" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="zagueiro100" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="zagueiro101" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="lateralDireito100" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/cerebro.png"></div>
+                        <div id="volante100" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/cerebro.png"></div>
+                        <div id="meioCampo100" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/cerebro.png"></div>
+                        <div id="meioCampo101" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/chuteiras.png"></div>
+                        <div id="pontaDireita100" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/chuteiras.png"></div>
+                        <div id="centroavante100" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/chuteiras.png"></div>
+                        <div id="pontaEsquerda100" class="col-9"></div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col reserva"><img src="./img/trocar.png"></div>
+                        <div id="meioCampo102" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col reserva"><img src="./img/trocar.png"></div>
+                        <div id="pontaEsquerda101" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col reserva"><img src="./img/trocar.png"></div>
+                        <div id="centroavante101" class="col-9"></div>
+                    </div>
+
+
+
+
+                    <p id="jo2" class="tituloJogador">Jogador 2</p>
+                    <div class="row">
+                        <div class="col"><img src="./img/luvas.png"></div>
+                        <div id="goleiro200" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="lateralEsquerdo200" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="zagueiro200" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="zagueiro201" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="lateralDireito200" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/cerebro.png"></div>
+                        <div id="volante200" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/cerebro.png"></div>
+                        <div id="meioCampo200" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/cerebro.png"></div>
+                        <div id="meioCampo201" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/chuteiras.png"></div>
+                        <div id="pontaDireita200" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/chuteiras.png"></div>
+                        <div id="centroavante200" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/chuteiras.png"></div>
+                        <div id="pontaEsquerda200" class="col-9"></div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col reserva"><img src="./img/trocar.png"></div>
+                        <div id="meioCampo202" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col reserva"><img src="./img/trocar.png"></div>
+                        <div id="pontaEsquerda201" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col reserva"><img src="./img/trocar.png"></div>
+                        <div id="centroavante201" class="col-9"></div>
+                    </div>
+
+                    
+
+
+                    <p id="jo3" class="tituloJogador">Jogador 3</p>
+                    <div class="row">
+                        <div class="col"><img src="./img/luvas.png"></div>
+                        <div id="goleiro300" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="lateralEsquerdo300" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="zagueiro300" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="zagueiro301" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/mao.png"></div>
+                        <div id="lateralDireito300" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/cerebro.png"></div>
+                        <div id="volante300" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/cerebro.png"></div>
+                        <div id="meioCampo300" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/cerebro.png"></div>
+                        <div id="meioCampo301" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/chuteiras.png"></div>
+                        <div id="pontaDireita300" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/chuteiras.png"></div>
+                        <div id="centroavante300" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"><img src="./img/chuteiras.png"></div>
+                        <div id="pontaEsquerda300" class="col-9"></div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col reserva"><img src="./img/trocar.png"></div>
+                        <div id="meioCampo302" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col reserva"><img src="./img/trocar.png"></div>
+                        <div id="pontaEsquerda301" class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col reserva"><img src="./img/trocar.png"></div>
+                        <div id="centroavante301" class="col-9"></div>
+                    </div>
+
+                    <div class="botoesSorteio">
+                        <p class="sortear">Sortear</p>
+                        <button id="sortearGoleiroP3" class="botaoDoSorteio">Goleiro</button> <button
+                            id="sortearZagueiroP3" class="botaoDoSorteio">Zaga</button> <button id="sortearMeioCampoP3"
+                            class="botaoDoSorteio">Meio-Campo</button> <button id="sortearAtaqueP3"
+                            class="botaoDoSorteio">Ataque</button>
+                    </div>
+
+                    <div id="nomes">
+                        <p id="jogadoresNome"> Nome dos jogadores</p>
+                    <input id="btn1" type="text" class="nome" placeholder="digite aqui..." maxlength="15"> <br>
+                    <input id="btn2" type="text" class="nome" placeholder="digite aqui..." maxlength="15"> <br>
+                    <input id="btn3" type="text" class="nome" placeholder="digite aqui..." maxlength="15"> <br>
+                    <button id="btnsortear">Sortear jogadores</button>
+                </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <footer id="footer"> </footer>
+
+
+        <script src="./1player.js"></script>
+        <script src="./2players.js"></script>
+        <script src="./3players.js"></script>
+        <script src="./goleiros.js"></script>
+        <script src="./zagueiros.js"></script>
+        <script src="./lateraisD.js"></script>
+        <script src="./lateraisE.js"></script>
+        <script src="./meioCampo.js"></script>
+        <script src="./volantes.js"></script>
+        <script src="./pontasD.js"></script>
+        <script src="./pontasE.js"></script>
+        <script src="./centroavante.js"></script>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
